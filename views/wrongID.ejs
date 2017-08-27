@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/libraries/bootstrap.min.css">
+		<script src="/libraries/jquery-3.2.1.min.js"></script>
+		<script src="./script.js"></script>
+		<title>Wrong Message ID</title>
+	</head>
+	<style>
+		.container {
+		margin: auto;
+		width: 60%;
+		padding-top: 10%;
+		text-align: center;
+		}
+		h4 { font-family: Verdana; }
+	</style>
+	<body>
+		<div class="container">
+			<h2>Sorry</h2>
+			</br></br>
+			<h4>There is no message stored with that ID</h4>
+			</br></br>
+			<button class="btn btn-primary btn-large" onclick="returnHome()">Go Back</button>
+		</div >
+	</body>
+	<script>
+		function returnHome() {
+		  window.location.href = ('/');
+		}
+	</script>
+</html>

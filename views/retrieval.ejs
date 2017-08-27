@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/libraries/bootstrap.min.css">
+		<script src="/libraries/jquery-3.2.1.min.js"></script>
+		<script src="./script.js"></script>
+		<title>Message Retrieved</title>
+	</head>
+	<style>
+		.container {
+		margin: auto;
+		width: 60%;
+		padding-top: 10%;
+		text-align: center;
+		}
+		h3{ font-family: Verdana; }
+	</style>
+	<body>
+		<div class="container">
+			<h3>Here is your saved message:</h3>
+			</br>
+			<h1> "<%= yourMessage2%>" </h1>
+			</br></br>
+			<button class="btn btn-primary btn-large" onclick="returnHome()">Go Back</button>
+		</div >
+	</body>
+	<script>
+		function returnHome() {
+		  window.location.href = ('/');
+		}
+	</script>
+</html>

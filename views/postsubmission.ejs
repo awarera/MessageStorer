@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/libraries/bootstrap.min.css">
+		<script src="/libraries/jquery-3.2.1.min.js"></script>
+		<script src="./script.js"></script>
+		<title>Message Submitted</title>
+	</head>
+	<style>
+		.container {
+		margin: auto;
+		width: 60%;
+		padding-top: 7%;
+		text-align: center;
+		}
+		body{ font-family: Verdana; }
+	</style>
+	<body>
+		<div class="container">
+			<h4>Message has been saved:</h4>
+			<br/>
+			<h1> "<%= yourMessage%>" </h1>
+			<br/><br/>
+			<h4>Here is your ID for retrieval:</h4>
+			<br/>
+			<h1><%= unique%></h1>
+			<br/>
+			<button class="btn btn-primary btn-large" onclick="returnHome()">Go Back</button>
+		</div >
+		</br>
+	</body>
+	<script>
+		function returnHome() {
+		  window.location.href = ('/');
+		}
+	</script>
+</html>

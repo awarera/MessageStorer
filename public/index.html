@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/libraries/bootstrap.min.css">
+		<script src="/libraries/jquery-3.2.1.min.js"></script>
+		<script src="./script.js"></script>
+		<title>Message Storage Service</title>
+	</head>
+	<style>
+		.container {
+		margin: auto;
+		width: 60%;
+		padding-top: 5%;
+		text-align: center;
+		}
+		h5 { font-family: Verdana; }
+	</style>
+	<body>
+		<div class="container">
+			<h1>Welcome</h1>
+			<br/><br/>
+			<h5>Store a message </h5>
+			<br/>
+			<div>
+				<input id="message" type="text" placeholder="Enter a message"/>
+				<button id="submit" class="btn btn-success btn-sm" onclick="validateMessage()">Store</button>
+			</div>
+			<br/><br/>
+			<div>
+				<h5>Retrieve a message:</h5>
+				<br/>
+				<input id="id2" type="text" placeholder="Enter message ID"/>
+				<button id="submit" class="btn btn-primary btn-sm" onclick="validateID()">Retrieve</button>
+			</div>
+		</div >
+	</body>
+</html>
